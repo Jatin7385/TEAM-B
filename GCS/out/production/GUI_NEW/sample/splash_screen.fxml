@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="anchor_pane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SplashScreen">
+   <children>
+      <ImageView fitHeight="207.0" fitWidth="256.0" layoutX="197.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Team%20Sammard%20Icon1.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="title_splash" fill="#0d068d" layoutX="69.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="15.0" style="-fx-font-size: 20pt; -fx-font-style: bold;" text="TEAM B GROUND STATION SOFTWARE" />
+   </children>
+</AnchorPane>
