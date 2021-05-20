@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../GMapsFX-1.1.1.jar/GMapsFX-1.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/extra-libs/rxtx-2.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/extra-libs/slf4j-api-1.7.12.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/extra-libs/slf4j-nop-1.7.12.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/extra-libs/slf4j-simple-1.7.12.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/extra-libs/slf4j-jdk14-1.7.12.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/xbee-java-library-1.3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/javadoc" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/ReceiveDataPollingSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/ReceiveDataSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/ReceiveModemStatusSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/SendBroadcastDataSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/SendDataAsyncSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/SendDataSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/bluetooth/ReceiveBluetoothDataSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/bluetooth/ReceiveBluetoothFileSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/bluetooth/SendBluetoothDataSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/cellular/ReceiveSMSSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/cellular/SendSMSSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/coap/ReceiveCoAPDataSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/coap/SendCoAPDataSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/explicit/ReceiveExplicitDataPollingSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/explicit/ReceiveExplicitDataSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/explicit/SendBroadcastExplicitDataSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/explicit/SendExplicitDataAsyncSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/explicit/SendExplicitDataSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/ip/ConnectToEchoServerSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/ip/KnockKnockSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/ip/ReceiveIPDataSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/ip/ReceiveIPv6DataSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/ip/SendIPDataSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/ip/SendIPv6DataSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/ip/SendUDPDataSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/micropython/ReceiveMicroPythonDataSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/micropython/SendMicroPythonDataSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/relay/ReceiveUserDataRelaySample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/communication/relay/SendUserDataRelaySample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/configuration/ConnectToAccessPointSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/configuration/ManageCommonParametersSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/configuration/ResetModuleSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/configuration/SetAndGetParametersSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/io/IOSamplingSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/io/LocalADCSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/io/LocalDIOSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/io/RemoteADCSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/io/RemoteDIOSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/examples/network/DiscoverDevicesSample/src" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/src/main" />
+          <root url="file://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/XBEE COMMUNICATION/XBJL-1.3.0/src/test" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../GMAPSFX JAR FILES/logback-classic-1.2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../GMAPSFX JAR FILES/slf4j-api-1.7.23.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../GMAPSFX JAR FILES/logback-core-1.2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../GMAPSFX JAR FILES/GMapsFX-2.12.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/opencsv-3.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../../../../../CS/CS/JAVA/JFX3DModelImporters_EA_2014-02-09/jimObjModelImporterJFX.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>

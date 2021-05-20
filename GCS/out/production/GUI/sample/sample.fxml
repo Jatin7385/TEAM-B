@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.gluonhq.charm.glisten.control.Icon?>-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Overall_controller">
+    <children>
+        <AnchorPane layoutX="351.0" layoutY="-5.0" prefHeight="141.0" prefWidth="650.0" AnchorPane.bottomAnchor="529.0" AnchorPane.leftAnchor="351.0" AnchorPane.rightAnchor="279.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Text fill="#0d068d" layoutX="195.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 40pt;" text="TEAM SAMMARD" wrappingWidth="539.316385269165" AnchorPane.bottomAnchor="594.3125012715658" AnchorPane.leftAnchor="195.0" AnchorPane.rightAnchor="203.01694806416833" AnchorPane.topAnchor="18.520835876464844">
+                    <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                    </font>
+                </Text>
+                <ImageView fitHeight="95.0" fitWidth="114.0" layoutX="89.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Team%20Sammard%20Icon1.png" />
+                    </image>
+                </ImageView>
+                <AnchorPane fx:id="anchor_scene" layoutX="3.0" layoutY="136.0" prefHeight="533.0" prefWidth="926.0" />
+            </children>
+        </AnchorPane>
+        <!--<AnchorPane layoutX="-3.0" layoutY="136.0" prefHeight="532.0" prefWidth="57.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1222.6666666666667" AnchorPane.topAnchor="138.0">
+           <children>
+              <Icon content="HELP_OUTLINE" layoutX="1.0" layoutY="-3.0" prefHeight="282.0" prefWidth="53.0" />
+              <Icon content="HELP_OUTLINE" layoutX="1.0" layoutY="276.0" prefHeight="249.0" prefWidth="55.0" />
+           </children>
+        </AnchorPane>-->
+        <VBox layoutX="1.0" layoutY="-3.0" prefHeight="125.0" prefWidth="172.0" spacing="3.0" AnchorPane.bottomAnchor="535.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="1098.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <Label style="-fx-font-size: 13pt;" text="TEAM ID  :">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Label>
+                <Label style="-fx-font-size: 13pt;" text="MISSION TIME  :">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="24.0" prefWidth="157.0" style="-fx-font-size: 13pt;" text="PACKET COUNT :">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="24.0" prefWidth="150.0" style="-fx-font-size: 13pt;" text="GPS TIME  :">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Label>
+            <Label prefHeight="24.0" prefWidth="190.0" style="-fx-font-size: 13pt;" text="CURRENT STAGE : ">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            </children>
+            <padding>
+                <Insets top="5.0" />
+            </padding>
+        </VBox>
+        <VBox layoutX="164.0" prefHeight="127.0" prefWidth="185.0" spacing="2.0" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <Text fx:id="team_id" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15pt;" text="Text">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Text>
+                <Text fx:id="mission_time" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15pt;" text="Text">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Text>
+                <Text fx:id="packet_count" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15pt;" text="Text">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Text>
+                <Text fx:id="gps_time" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15pt;" text="Text">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Text>
+            <Text fx:id="stage_text" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15pt;" text="Text">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            </children>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+        </VBox>
+      <TabPane layoutX="-1.0" layoutY="154.0" prefHeight="486.0" prefWidth="1281.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="CARRIER">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="514.0" prefWidth="1281.0">
+                  <children>
+                      <TabPane prefHeight="499.0" prefWidth="1283.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                              <Tab text="ALTITUDE">
+                                  <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                          <children>
+                                              <LineChart fx:id="altitude_time" layoutY="6.0" prefHeight="463.0" prefWidth="1277.0" styleClass="chart-series-line">
+                                                  <xAxis>
+                                                      <CategoryAxis side="BOTTOM" />
+                                                  </xAxis>
+                                                  <yAxis>
+                                                      <NumberAxis side="LEFT" />
+                                                  </yAxis>
+                                              </LineChart>
+                                          </children>
+                                      </AnchorPane>
+                                  </content>
+                              </Tab>
+                              <Tab text="LATITUDE">
+                                  <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                          <children>
+                                              <LineChart fx:id="latitude_time" prefHeight="468.0" prefWidth="1281.0">
+                                                  <xAxis>
+                                                      <CategoryAxis side="BOTTOM" />
+                                                  </xAxis>
+                                                  <yAxis>
+                                                      <NumberAxis side="LEFT" />
+                                                  </yAxis>
+                                              </LineChart>
+                                          </children>
+                                      </AnchorPane>
+                                  </content>
+                              </Tab>
+                              <Tab text="LONGITUDE">
+                                  <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                          <children>
+                                              <LineChart fx:id="longitude_time" prefHeight="471.0" prefWidth="1283.0">
+                                                  <xAxis>
+                                                      <CategoryAxis side="BOTTOM" />
+                                                  </xAxis>
+                                                  <yAxis>
+                                                      <NumberAxis side="LEFT" />
+                                                  </yAxis>
+                                              </LineChart>
+                                          </children>
+                                      </AnchorPane>
+                                  </content>
+                              </Tab>
+                              <Tab text="PITCH">
+                                  <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                          <children>
+                                              <LineChart fx:id="pitch_time" prefHeight="471.0" prefWidth="1283.0">
+                                                  <xAxis>
+                                                      <CategoryAxis side="BOTTOM" />
+                                                  </xAxis>
+                                                  <yAxis>
+                                                      <NumberAxis side="LEFT" />
+                                                  </yAxis>
+                                              </LineChart>
+                                          </children>
+                                      </AnchorPane>
+                                  </content>
+                              </Tab>
+                              <Tab text="ROLL">
+                                  <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                          <children>
+                                              <LineChart fx:id="roll_time" prefHeight="469.0" prefWidth="1281.0">
+                                                  <xAxis>
+                                                      <CategoryAxis side="BOTTOM" />
+                                                  </xAxis>
+                                                  <yAxis>
+                                                      <NumberAxis side="LEFT" />
+                                                  </yAxis>
+                                              </LineChart>
+                                          </children>
+                                      </AnchorPane>
+                                  </content>
+                              </Tab>
+                              <Tab text="YAW">
+                                  <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                          <children>
+                                              <LineChart fx:id="yaw_time" prefHeight="469.0" prefWidth="1283.0">
+                                                  <xAxis>
+                                                      <CategoryAxis side="BOTTOM" />
+                                                  </xAxis>
+                                                  <yAxis>
+                                                      <NumberAxis side="LEFT" />
+                                                  </yAxis>
+                                              </LineChart>
+                                          </children>
+                                      </AnchorPane>
+                                  </content>
+                              </Tab>
+                              <Tab text="3-D MODEL">
+                                <content>
+                                  <AnchorPane fx:id="model_anchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Button layoutX="588.0" layoutY="184.0" mnemonicParsing="false" onAction="#Begin" text="Button" />
+                                       </children></AnchorPane>
+                                </content>
+                              </Tab>
+                          </tabs>
+                      </TabPane>
+                  </children>
+              </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="SCIENCE PAYLOAD">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane prefHeight="498.0" prefWidth="1281.0" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab text="ALTITUDE">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <LineChart fx:id="altitude_time_sp" layoutY="-2.0" prefHeight="471.0" prefWidth="1280.0">
+                                             <xAxis>
+                                                <NumberAxis side="BOTTOM" />
+                                             </xAxis>
+                                             <yAxis>
+                                                <NumberAxis side="LEFT" />
+                                             </yAxis>
+                                          </LineChart>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="TEMPERATURE">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <LineChart fx:id="temperature_time_sp" prefHeight="472.0" prefWidth="1281.0">
+                                             <xAxis>
+                                                <NumberAxis side="BOTTOM" />
+                                             </xAxis>
+                                             <yAxis>
+                                                <NumberAxis side="LEFT" />
+                                             </yAxis>
+                                          </LineChart>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="AIR SPEED">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <LineChart fx:id="airspeed_time_sp" prefHeight="473.0" prefWidth="1283.0">
+                                             <xAxis>
+                                                <NumberAxis side="BOTTOM" />
+                                             </xAxis>
+                                             <yAxis>
+                                                <NumberAxis side="LEFT" />
+                                             </yAxis>
+                                          </LineChart>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+    </children>
+</AnchorPane>
