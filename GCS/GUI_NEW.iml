@@ -75,10 +75,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 62964434ca498c72c74c49b0b077d7ee97663a6f
     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:15.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:win:15.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:15.0.1" level="project" />
@@ -97,11 +93,6 @@
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.2.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.13.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
->>>>>>> 62964434ca498c72c74c49b0b077d7ee97663a6f
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -167,29 +158,5 @@
         </SOURCES>
       </library>
     </orderEntry>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:15.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:win:15.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:15.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:win:15.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:15.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:win:15.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:15.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:win:15.0.1" level="project" />
-    <orderEntry type="library" name="Maven: com.sothawo:mapjfx:3.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-web:15.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-web:win:15.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-media:15.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-media:win:15.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.28" level="project" />
-    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.2.3" level="project" />
-    <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.2.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.13.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
->>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
->>>>>>> 62964434ca498c72c74c49b0b077d7ee97663a6f
   </component>
 </module>
