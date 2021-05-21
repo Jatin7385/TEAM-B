@@ -253,6 +253,13 @@ public class Overall_controller implements Initializable {
 
     private int prevStage = 0;
 
+<<<<<<< HEAD
+=======
+    private int prevPitch = 0;
+    private int prevRoll = 0;
+    private int prevYaw = 0;
+
+>>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
     //Constructor
 
     public Overall_controller() {
@@ -399,6 +406,42 @@ public class Overall_controller implements Initializable {
 
         return rotate;
     }
+<<<<<<< HEAD
+=======
+
+    private RotateTransition setPitchOrientation(Group group,int prev,int current) {
+        RotateTransition rotate = new RotateTransition(Duration.seconds(0.1), group);
+        rotate.setAxis(Rotate.X_AXIS);
+        rotate.setFromAngle(prev);
+        rotate.setToAngle(current);
+        rotate.setInterpolator(Interpolator.LINEAR);
+        //rotate.setCycleCount(RotateTransition.INDEFINITE);
+
+        return rotate;
+    }
+    private RotateTransition setRollOrientation(Group group,int prev,int current) {
+        RotateTransition rotate = new RotateTransition(Duration.seconds(0.1), group);
+        rotate.setAxis(Rotate.Z_AXIS);
+        rotate.setFromAngle(prev);
+        rotate.setToAngle(current);
+        rotate.setInterpolator(Interpolator.LINEAR);
+        //rotate.setCycleCount(RotateTransition.INDEFINITE);
+
+        return rotate;
+    }
+
+    private RotateTransition setYawOrientation(Group group,int prev,int current) {
+        RotateTransition rotate = new RotateTransition(Duration.seconds(0.1), group);
+        rotate.setAxis(Rotate.Y_AXIS);
+        rotate.setFromAngle(prev);
+        rotate.setToAngle(current);
+        rotate.setInterpolator(Interpolator.LINEAR);
+        //rotate.setCycleCount(RotateTransition.INDEFINITE);
+
+        return rotate;
+    }
+
+>>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
     //Function for Creating the Science Payload SubScene
     private void createSubScene_sp() {
 
@@ -478,26 +521,43 @@ public class Overall_controller implements Initializable {
 
     // ORIENTATION FOR CARRIER
 
+<<<<<<< HEAD
     /*private void createSubScene_carrier_stage(int pitch, int roll, int yaw) {
+=======
+    private void createSubScene_carrier_stage(int prevPitch,int pitch, int prevRoll,int roll,int prevYaw, int yaw) {
+>>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
 
         PerspectiveCamera camera = new PerspectiveCamera(true);
         camera.setTranslateZ(-3.5);
         camera.setTranslateX(0.7);
         camera.setTranslateY(0.5);
         Group model = loadModel(getClass().getResource("assem for jatin.obj"));
+<<<<<<< HEAD
         model.getTransforms().add(new Rotate(pitch, Rotate.X_AXIS));
         model.getTransforms().add(new Rotate(roll, Rotate.Y_AXIS));
         model.getTransforms().add(new Rotate(yaw, Rotate.Z_AXIS));
+=======
+        model.getTransforms().add(new Rotate(90, Rotate.X_AXIS));
+        model.getTransforms().add(new Rotate(0, Rotate.Y_AXIS));
+        model.getTransforms().add(new Rotate(10, Rotate.Z_AXIS));
+>>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
 
         anchor_subscene_carrier.getChildren().remove(model_subscene_carrier);
 
         Group root = new Group(model);
 
+<<<<<<< HEAD
         /*RotateTransition rotate = rotate3dGroup(root);
+=======
+        RotateTransition rotatePitch = setPitchOrientation(root,prevPitch,pitch);
+        RotateTransition rotateRoll = setRollOrientation(root,prevRoll,roll);
+        RotateTransition rotateYaw = setYawOrientation(root,prevYaw,yaw);
+>>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
 
         Platform.runLater(new Runnable() {
             @Override
             public void run() {
+<<<<<<< HEAD
                 rotate.play();
             }
         });
@@ -506,16 +566,54 @@ public class Overall_controller implements Initializable {
         model_subscene_carrier.setCamera(camera);
         anchor_subscene_carrier.getChildren().add(model_subscene_carrier);
     }*/
+=======
+                rotatePitch.play();
+                rotateRoll.play();
+                rotateYaw.play();
+            }
+        });
+
+        /*Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                rotateRoll.play();
+            }
+        });
+
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                rotateYaw.play();
+            }
+        });*/
+        model_subscene_carrier = new SubScene(root, 1281, 442,true,SceneAntialiasing.BALANCED);
+        model_subscene_carrier.setCamera(camera);
+        anchor_subscene_carrier.getChildren().add(model_subscene_carrier);
+    }
+>>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
 
     //Creating the Carrier SubScene
     private void createSubScene_carrier() {
 
         PerspectiveCamera camera = new PerspectiveCamera(true);
         camera.setTranslateZ(-3.5);
+<<<<<<< HEAD
         camera.setTranslateX(0.7);
         camera.setTranslateY(0.5);
         Group model = loadModel(getClass().getResource("assem for jatin.obj"));
         model.getTransforms().add(new Rotate(90, Rotate.X_AXIS));
+=======
+        camera.setTranslateX(0.8);
+        camera.setTranslateY(0.5);
+        Group model = loadModel(getClass().getResource("assem for jatin.obj"));
+        //model.getTransforms().add(new Rotate(90, Rotate.X_AXIS));
+
+        model.getTransforms().add(new Rotate(90, Rotate.X_AXIS));
+        //model.getTransforms().add(new Rotate(90, Rotate.Y_AXIS));
+        model.getTransforms().add(new Rotate(10, Rotate.Z_AXIS));
+
+
+>>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
 
         anchor_subscene_carrier.getChildren().remove(model_subscene_carrier);
 
@@ -691,6 +789,10 @@ public class Overall_controller implements Initializable {
             sp_altitude_data.setCellValueFactory(new PropertyValueFactory<SPDATAMODEL, String>("SP_ALTITUDE"));
             sp_temperature_data.setCellValueFactory(new PropertyValueFactory<SPDATAMODEL, String>("TEMPERATURE"));
             sp_airspeed_data.setCellValueFactory(new PropertyValueFactory<SPDATAMODEL, String>("AIR_SPEED"));
+<<<<<<< HEAD
+=======
+            //createSubScene_carrier_stage(0,90,0,90,0,90);
+>>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
             setAltitude_time();
             setLatitude_time();
             setLongitude_time();
@@ -1022,7 +1124,14 @@ public class Overall_controller implements Initializable {
                 while ((nextline = reader.readNext()) != null) {
                     String[] columns = nextline;
                     Platform.runLater(() -> {
+<<<<<<< HEAD
                         //createSubScene_carrier_stage(Integer.parseInt(columns[7]),Integer.parseInt(columns[8]),Integer.parseInt(columns[9]));
+=======
+                        //createSubScene_carrier_stage(prevPitch,Integer.parseInt(columns[7]) ,prevRoll,Integer.parseInt(columns[8]),prevYaw,Integer.parseInt(columns[9]));
+                        prevPitch = Integer.parseInt(columns[7]);
+                        prevRoll = Integer.parseInt(columns[8]);
+                        prevYaw = Integer.parseInt(columns[9]);
+>>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
                         series5.getData().add(new XYChart.Data<>(columns[1], Integer.parseInt(columns[9])));
                         series5_all.getData().add(new XYChart.Data<>(columns[1], Integer.parseInt(columns[9])));
                         if(Integer.parseInt(columns[9])>180){
@@ -1132,7 +1241,11 @@ public class Overall_controller implements Initializable {
                     Platform.runLater(() -> {
                         series1_sp.getData().add(new XYChart.Data<>(Integer.parseInt(columns1[1]), Integer.parseInt(columns[3])));
                         series1_sp_all.getData().add(new XYChart.Data<>(Integer.parseInt(columns1[1]), Integer.parseInt(columns[3])));
+<<<<<<< HEAD
                         if(Integer.parseInt(columns[3])<-20 && Integer.parseInt(columns[3])>45){
+=======
+                        if(Integer.parseInt(columns[3])>-20 && Integer.parseInt(columns[3])<45){
+>>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
                             series1_sp.getNode().setStyle("-fx-stroke: #FF0000; ");
                             series1_sp_all.getNode().setStyle("-fx-stroke: #FF0000; ");
                         }

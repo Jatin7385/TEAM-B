@@ -1,0 +1,14 @@
+.enhance{
+   
+    color:#141314;
+    font-family:monospace;
+  line-height: 2.5rem;
+    position:absolute;
+    top:27%;
+    font-size: 30px;
+    
+}
+body{
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRA5jP4NicGkKJnSMihSbTifz5p3cXqDiviQ&usqp=CAU");
+}
+

@@ -1,0 +1,249 @@
+.teamBack{
+    background-image: url("./images/team.jpg");
+    width:100vw;
+    height:70vh;
+}
+
+.Card{
+ 
+  width:18.75rem;
+  height:25rem;
+  background: rgb(244, 239, 247);
+  border-radius: 0.625rem;
+  box-shadow: 0 0.0625rem 0.625rem 0.0625rem black;
+  margin-left: 40.625rem;
+  position:relative;
+  margin-top: 5.625rem;
+  margin-left:28.125rem;
+  
+}
+.Card1{
+ 
+    width:18.75rem;
+    height:25rem;
+    background: rgb(244, 239, 247);
+    border-radius: 0.625rem;
+    box-shadow: 0 0.0625rem 0.625rem 0.0625rem black;
+    margin-left: 53.125rem;
+    position:relative;
+    margin-top: -25rem;
+   
+}
+.Card2{
+ 
+        width:18.75rem;
+        height:25rem;
+        background: rgb(244, 239, 247);
+        border-radius: 0.625rem;
+        box-shadow: 0 0.0625rem 0.625rem 0.0625rem black;
+    margin-left: 12.5rem;
+    position:relative;
+    margin-top: 3.75rem;
+    
+   
+}
+.Card3{
+        width:18.75rem;
+        height:25rem;
+        background: rgb(244, 239, 247);
+        border-radius: 0.625rem;
+        box-shadow: 0 0.0625rem 0.625rem 0.0625rem black;
+    margin-left: 28.125rem;
+    position:relative;
+    margin-top: 4.375rem;
+   
+}
+.Card4{
+ 
+    width:300px;
+    height:400px;
+    background: rgb(244, 239, 247);
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 1px black;
+    margin-left: 850px;
+    position:relative;
+    margin-top: -402px;
+   
+}
+.Card5{
+ 
+    width:300px;
+    height:400px;
+    background: rgb(244, 239, 247);
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 1px black;
+    margin-left: 990px;
+  
+    margin-top: 60px;
+   
+}
+.Card6{
+ 
+    width:300px;
+    height:400px;
+    background: rgb(244, 239, 247);
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 1px black;
+    margin-left: 850px;
+    position:relative;
+    margin-top: 70px;
+   
+}
+.Card7{
+ 
+    width:300px;
+    height:400px;
+    background: rgb(244, 239, 247);
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 1px black;
+    margin-left: 450px;
+    position:relative;
+    margin-top: -402px;
+   
+}
+.upper-container{
+    height:100px;
+    background: linear-gradient(to right, #fc5c7d, #6a82fb);
+   
+}
+.card-container {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    max-width: 1120px;
+    width: 95%;
+    margin: 0 auto;
+    margin-left: 100px;
+  }
+
+
+.image-container img{
+     background: white;
+     width:100px;
+     height:100px;
+     border-radius: 50%;
+     padding: 5px;
+     transform: translate(95px,28px);
+}
+img{
+    border:3.5px solid purple;
+    align-items: center;
+}
+.lower-container{
+    margin-top:60px;
+    height:200px;
+    background: white;
+    text-align:center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.lower-container h3,h4,p{
+    margin:0;
+    padding:0;
+}
+.lower-container h3{
+    color:#2f2d2e;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.lower-container h4{
+    color:purple;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.lower-container p{
+    margin:1rem;
+    color:rgb(27, 26, 27);
+    font-weight: 300;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+.neon1 {
+    position: relative;
+    overflow: hidden;
+    filter: brightness(100%);
+}
+
+.text1 {
+    background-color: black;
+    margin-left: 45px;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    user-select: none;
+}
+
+.text1::before {
+    content: attr(data-text);
+    
+    position: absolute;
+    color: white;
+    text-align: center;
+    filter: blur(0.04em);
+    mix-blend-mode: difference;
+}
+.text2 {
+    background-color: black;
+    margin-left: 189px;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    user-select: none;
+}
+
+.text2::before {
+    content: attr(data-text);
+    
+    position: absolute;
+    color: white;
+    text-align: center;
+    filter: blur(0.04em);
+    mix-blend-mode: difference;
+}
+
+.gradient1 {
+    position: absolute;
+    background: linear-gradient(45deg, rgb(0, 183, 255), rgb(134, 181, 235), rgb(248, 162, 222), rgb(0, 195, 255), rgb(103, 161, 238));
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: multiply;
+}
+
+.spotlight1 {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(
+            circle,
+            white,
+            transparent 25%
+        ) center / 25% 25%,
+        radial-gradient(
+            circle,
+            white,
+            black 35%
+        ) center / 12.5% 12.5%;
+    animation: light 5s linear infinite;
+    mix-blend-mode: color-dodge;
+}
+
+@keyframes light {
+    to {
+        transform: translate(50%, 50%);
+    }
+}
+
