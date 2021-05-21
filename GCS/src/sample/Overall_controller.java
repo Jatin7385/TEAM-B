@@ -16,6 +16,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Point3D;
 import javafx.scene.*;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.XYChart;
@@ -255,11 +256,14 @@ public class Overall_controller implements Initializable {
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
     private int prevPitch = 0;
     private int prevRoll = 0;
     private int prevYaw = 0;
 
 >>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
+>>>>>>> 62964434ca498c72c74c49b0b077d7ee97663a6f
     //Constructor
 
     public Overall_controller() {
@@ -408,6 +412,8 @@ public class Overall_controller implements Initializable {
     }
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 
     private RotateTransition setPitchOrientation(Group group,int prev,int current) {
         RotateTransition rotate = new RotateTransition(Duration.seconds(0.1), group);
@@ -437,11 +443,13 @@ public class Overall_controller implements Initializable {
         rotate.setToAngle(current);
         rotate.setInterpolator(Interpolator.LINEAR);
         //rotate.setCycleCount(RotateTransition.INDEFINITE);
+>>>>>>> 62964434ca498c72c74c49b0b077d7ee97663a6f
 
-        return rotate;
-    }
 
+<<<<<<< HEAD
+=======
 >>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
+>>>>>>> 62964434ca498c72c74c49b0b077d7ee97663a6f
     //Function for Creating the Science Payload SubScene
     private void createSubScene_sp() {
 
@@ -469,7 +477,7 @@ public class Overall_controller implements Initializable {
         model_subscene_sp.setCamera(camera);
         anchor_subscene_sp.getChildren().add(model_subscene_sp);
     }
-    //
+    //Function for changing the model as per the stage
     private void createSubScene_sp_stage(int stage) {
 
         PerspectiveCamera camera = new PerspectiveCamera(true);
@@ -512,26 +520,58 @@ public class Overall_controller implements Initializable {
 
             root = new Group(model);
         }
-
-
         model_subscene_sp = new SubScene(root, 1281, 442,true,SceneAntialiasing.BALANCED);
         model_subscene_sp.setCamera(camera);
         anchor_subscene_sp.getChildren().add(model_subscene_sp);
     }
 
+    //ORIENTATION FOR CARRIER
+/*
+    private void matrixRotateNode(Group n, double alf, double bet, double gam){
+        double A11=Math.cos(alf)*Math.cos(gam);
+        double A12=Math.cos(bet)*Math.sin(alf)+Math.cos(alf)*Math.sin(bet)*Math.sin(gam);
+        double A13=Math.sin(alf)*Math.sin(bet)-Math.cos(alf)*Math.cos(bet)*Math.sin(gam);
+        double A21=-Math.cos(gam)*Math.sin(alf);
+        double A22=Math.cos(alf)*Math.cos(bet)-Math.sin(alf)*Math.sin(bet)*Math.sin(gam);
+        double A23=Math.cos(alf)*Math.sin(bet)+Math.cos(bet)*Math.sin(alf)*Math.sin(gam);
+        double A31=Math.sin(gam);
+        double A32=-Math.cos(gam)*Math.sin(bet);
+        double A33=Math.cos(bet)*Math.cos(gam);
+
+        double d = Math.acos((A11+A22+A33-1d)/2d);
+        if(d!=0d){
+            double den=2d*Math.sin(d);
+            Point3D p= new Point3D((A32-A23)/den,(A13-A31)/den,(A21-A12)/den);
+            n.setRotationAxis(p);
+            n.setRotate(Math.toDegrees(d));
+        }
+    }
+
     // ORIENTATION FOR CARRIER
 
+<<<<<<< HEAD
+    private void createSubScene_carrier_stage(int pitch, int roll, int yaw) {
+=======
 <<<<<<< HEAD
     /*private void createSubScene_carrier_stage(int pitch, int roll, int yaw) {
 =======
     private void createSubScene_carrier_stage(int prevPitch,int pitch, int prevRoll,int roll,int prevYaw, int yaw) {
 >>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
+>>>>>>> 62964434ca498c72c74c49b0b077d7ee97663a6f
 
         PerspectiveCamera camera = new PerspectiveCamera(true);
         camera.setTranslateZ(-3.5);
         camera.setTranslateX(0.7);
-        camera.setTranslateY(0.5);
+        camera.setTranslateY(-0.2);
         Group model = loadModel(getClass().getResource("assem for jatin.obj"));
+<<<<<<< HEAD
+
+        matrixRotateNode(model,roll,pitch,yaw);
+
+        //model.getTransforms().add(new Rotate(pitch, Rotate.X_AXIS));
+        //model.getTransforms().add(new Rotate(roll, Rotate.Y_AXIS));
+        //model.getTransforms().add(new Rotate(yaw, Rotate.Z_AXIS));
+=======
 <<<<<<< HEAD
         model.getTransforms().add(new Rotate(pitch, Rotate.X_AXIS));
         model.getTransforms().add(new Rotate(roll, Rotate.Y_AXIS));
@@ -541,6 +581,7 @@ public class Overall_controller implements Initializable {
         model.getTransforms().add(new Rotate(0, Rotate.Y_AXIS));
         model.getTransforms().add(new Rotate(10, Rotate.Z_AXIS));
 >>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
+>>>>>>> 62964434ca498c72c74c49b0b077d7ee97663a6f
 
         anchor_subscene_carrier.getChildren().remove(model_subscene_carrier);
 
@@ -549,15 +590,22 @@ public class Overall_controller implements Initializable {
 <<<<<<< HEAD
         /*RotateTransition rotate = rotate3dGroup(root);
 =======
+<<<<<<< HEAD
+        /*RotateTransition rotate = rotate3dGroup(root);
+=======
         RotateTransition rotatePitch = setPitchOrientation(root,prevPitch,pitch);
         RotateTransition rotateRoll = setRollOrientation(root,prevRoll,roll);
         RotateTransition rotateYaw = setYawOrientation(root,prevYaw,yaw);
 >>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
+>>>>>>> 62964434ca498c72c74c49b0b077d7ee97663a6f
 
         Platform.runLater(new Runnable() {
             @Override
             public void run() {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 62964434ca498c72c74c49b0b077d7ee97663a6f
                 rotate.play();
             }
         });
@@ -565,6 +613,10 @@ public class Overall_controller implements Initializable {
         model_subscene_carrier = new SubScene(root, 1281, 442,true,SceneAntialiasing.BALANCED);
         model_subscene_carrier.setCamera(camera);
         anchor_subscene_carrier.getChildren().add(model_subscene_carrier);
+<<<<<<< HEAD
+    }
+    */
+=======
     }*/
 =======
                 rotatePitch.play();
@@ -591,12 +643,21 @@ public class Overall_controller implements Initializable {
         anchor_subscene_carrier.getChildren().add(model_subscene_carrier);
     }
 >>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
+>>>>>>> 62964434ca498c72c74c49b0b077d7ee97663a6f
 
     //Creating the Carrier SubScene
     private void createSubScene_carrier() {
 
         PerspectiveCamera camera = new PerspectiveCamera(true);
         camera.setTranslateZ(-3.5);
+<<<<<<< HEAD
+        camera.setTranslateX(0.9);
+        camera.setTranslateY(0.5);
+        Group model = loadModel(getClass().getResource("assem for jatin.obj"));
+        model.getTransforms().add(new Rotate(90,Rotate.X_AXIS));
+        model.getTransforms().add(new Rotate(8,Rotate.Z_AXIS));
+        //matrixRotateNode(model,0,0,0);
+=======
 <<<<<<< HEAD
         camera.setTranslateX(0.7);
         camera.setTranslateY(0.5);
@@ -614,6 +675,7 @@ public class Overall_controller implements Initializable {
 
 
 >>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
+>>>>>>> 62964434ca498c72c74c49b0b077d7ee97663a6f
 
         anchor_subscene_carrier.getChildren().remove(model_subscene_carrier);
 
@@ -791,8 +853,11 @@ public class Overall_controller implements Initializable {
             sp_airspeed_data.setCellValueFactory(new PropertyValueFactory<SPDATAMODEL, String>("AIR_SPEED"));
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
             //createSubScene_carrier_stage(0,90,0,90,0,90);
 >>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
+>>>>>>> 62964434ca498c72c74c49b0b077d7ee97663a6f
             setAltitude_time();
             setLatitude_time();
             setLongitude_time();
@@ -1127,11 +1192,15 @@ public class Overall_controller implements Initializable {
 <<<<<<< HEAD
                         //createSubScene_carrier_stage(Integer.parseInt(columns[7]),Integer.parseInt(columns[8]),Integer.parseInt(columns[9]));
 =======
+<<<<<<< HEAD
+                        //createSubScene_carrier_stage(Integer.parseInt(columns[7]),Integer.parseInt(columns[8]),Integer.parseInt(columns[9]));
+=======
                         //createSubScene_carrier_stage(prevPitch,Integer.parseInt(columns[7]) ,prevRoll,Integer.parseInt(columns[8]),prevYaw,Integer.parseInt(columns[9]));
                         prevPitch = Integer.parseInt(columns[7]);
                         prevRoll = Integer.parseInt(columns[8]);
                         prevYaw = Integer.parseInt(columns[9]);
 >>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
+>>>>>>> 62964434ca498c72c74c49b0b077d7ee97663a6f
                         series5.getData().add(new XYChart.Data<>(columns[1], Integer.parseInt(columns[9])));
                         series5_all.getData().add(new XYChart.Data<>(columns[1], Integer.parseInt(columns[9])));
                         if(Integer.parseInt(columns[9])>180){
@@ -1244,8 +1313,12 @@ public class Overall_controller implements Initializable {
 <<<<<<< HEAD
                         if(Integer.parseInt(columns[3])<-20 && Integer.parseInt(columns[3])>45){
 =======
+<<<<<<< HEAD
+                        if(Integer.parseInt(columns[3])<-20 && Integer.parseInt(columns[3])>45){
+=======
                         if(Integer.parseInt(columns[3])>-20 && Integer.parseInt(columns[3])<45){
 >>>>>>> 4999ccd107549b60fa41d6b8228b49f6d1feb617
+>>>>>>> 62964434ca498c72c74c49b0b077d7ee97663a6f
                             series1_sp.getNode().setStyle("-fx-stroke: #FF0000; ");
                             series1_sp_all.getNode().setStyle("-fx-stroke: #FF0000; ");
                         }
